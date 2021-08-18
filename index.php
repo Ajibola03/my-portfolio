@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,12 +17,22 @@
 	<link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="dist/css/main.css">
-
+	<link rel="stylesheet" href="dist/css/animate.css">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 </head>
 
 <body>
+	<?php if($_SESSION['mail_sent']) { ?>
+		<div class="alert flash alert-success m-2 animate__animated animate__backInDown" style="position: fixed; right: 0%; z-index: 10000" role="alert">
+			Mail sent successfully!
+		</div>
+		<script>
+			setTimeout(() => {
+				$('.flash').removeClass('animate__backInDown').addClass('animate__backOutUp')
+			}, 3000)
+		</script>
+	<?php $_SESSION['mail_sent'] = false; } ?>
 	<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 	<!-- ======= Header ======= -->
 	<header id="header" class="d-flex flex-column justify-content-center">
@@ -82,12 +93,12 @@
 
 				<div class="row">
 					<div class="col-lg-4">
-						<img src="dist/images/profile-img.jpg" class="img-fluid" alt="">
+						<img src="dist/images/pexels-drew-williams-3098620-min.jpg" class="img-fluid" alt="">
 					</div>
 					<div class="col-lg-8 pt-4 pt-lg-0 content">
 						<h3>Full-stack Web Developer &amp; Cross platfrom Mobile Developer (Android & iOS).</h3>
 						<p class="fst-italic">
-						Professional web developer with 3 years experience.
+							Professional web developer with 3 years experience.
 						</p>
 						<div class="row">
 							<div class="col-lg-6">
@@ -107,7 +118,7 @@
 		</section><!-- End About Section -->
 
 		<!-- ======= Skills Section ======= -->
-		<section id="skills" class="skills section-bg">
+		<section id="skills" class="skills section-bg my-2">
 			<div class="container" data-aos="fade-up">
 
 				<div class="section-title">
@@ -122,21 +133,21 @@
 						<div class="px-2 pb-2" style="background:#E9ECEF">
 							<span class="skill">HTML <i class="val">100%</i></span>
 							<div class="progress">
-								<div class="progress-bar" style="border-radius: none !important; width: 100%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar progress-bar-striped progress-bar-animated" style="border-radius: none !important; width: 100%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
 
 						<div class="px-2 pb-2" style="background:#E9ECEF">
 							<span class="skill">CSS <i class="val">90%</i></span>
 							<div class="progress bg-dark">
-								<div class="progress-bar" style="border-radius: none !important; width: 90%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar progress-bar-striped progress-bar-animated" style="border-radius: none !important; width: 90%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
 
 						<div class="px-2 pb-2" style="background:#E9ECEF">
 							<span class="skill">Javascript <i class="val">75%</i></span>
 							<div class="progress bg-dark">
-								<div class="progress-bar" style="border-radius: none !important; width: 75%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar progress-bar-striped progress-bar-animated" style="border-radius: none !important; width: 75%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
 					</div>
@@ -145,21 +156,21 @@
 						<div class="px-2 pb-2" style="background:#E9ECEF">
 							<span class="skill">PHP <i class="val">80%</i></span>
 							<div class="progress bg-dark">
-								<div class="progress-bar" style="border-radius: none !important; width: 80%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar progress-bar-striped progress-bar-animated" style="border-radius: none !important; width: 80%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
 
 						<div class="px-2 pb-2" style="background:#E9ECEF">
 							<span class="skill">NodeJs <i class="val">80%</i></span>
 							<div class="progress bg-dark">
-								<div class="progress-bar" style="border-radius: none !important; width: 80%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar progress-bar-striped progress-bar-animated" style="border-radius: none !important; width: 80%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
 
 						<div class="px-2 pb-2" style="background:#E9ECEF">
 							<span class="skill">SQL <i class="val">80%</i></span>
 							<div class="progress bg-dark">
-								<div class="progress-bar" style="border-radius: none !important; width: 80%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar progress-bar-striped progress-bar-animated" style="border-radius: none !important; width: 80%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
 
@@ -214,185 +225,16 @@
 							<p><a href="https://internship.zuri.team/"><img src="dist/images/zuri-logo.svg" alt="zuri logo"></a></p>
 							<ul>
 								<li>8 weeks Program.</li>
-								<li>Romote. </li>
+								<li>Remote. </li>
 								<li>Work individually and in groups over a series of 8 stages.</li>
 								<li>Several Tracks/Stacks Available.</li>
 							</ul>
 						</div>
-						<?php if (false) { ?>
-							<h3 class="resume-title">Professional Experience</h3>
-							<div class="resume-item">
-								<h4>Full-stack Web Developer</h4>
-								<h5>2019 - Present</h5>
-								<p><em>Alusoft technologies, Ibadan, Nigeria</em></p>
-								<ul>
-									<li>Lead in the development, and implementation of the frontend, backend, and deployment of web applications.</li>
-									<li>Work in groups of 3 to 5 members to complete tasks. </li>
-									<li>Supervise and Tutor Beginners in web and mobile applications development</li>
-									<li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-								</ul>
-							</div>
-						<?php } ?>
 					</div>
 				</div>
 
 			</div>
 		</section><!-- End Resume Section -->
-
-		<?php if (false) { ?>
-			<!-- ======= Portfolio Section ======= -->
-			<section id="portfolio" class="portfolio section-bg">
-				<div class="container" data-aos="fade-up">
-
-					<div class="section-title">
-						<h2>Portfolio</h2>
-						<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-					</div>
-
-					<div class="row">
-						<div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-							<ul id="portfolio-flters">
-								<li data-filter="*" class="filter-active">All</li>
-								<li data-filter=".filter-app">App</li>
-								<li data-filter=".filter-card">Card</li>
-								<li data-filter=".filter-web">Web</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-						<div class="col-lg-4 col-md-6 portfolio-item filter-app">
-							<div class="portfolio-wrap">
-								<img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-								<div class="portfolio-info">
-									<h4>App 1</h4>
-									<p>App</p>
-									<div class="portfolio-links">
-										<a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-										<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 portfolio-item filter-web">
-							<div class="portfolio-wrap">
-								<img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-								<div class="portfolio-info">
-									<h4>Web 3</h4>
-									<p>Web</p>
-									<div class="portfolio-links">
-										<a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-										<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 portfolio-item filter-app">
-							<div class="portfolio-wrap">
-								<img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-								<div class="portfolio-info">
-									<h4>App 2</h4>
-									<p>App</p>
-									<div class="portfolio-links">
-										<a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-										<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 portfolio-item filter-card">
-							<div class="portfolio-wrap">
-								<img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-								<div class="portfolio-info">
-									<h4>Card 2</h4>
-									<p>Card</p>
-									<div class="portfolio-links">
-										<a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-										<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 portfolio-item filter-web">
-							<div class="portfolio-wrap">
-								<img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-								<div class="portfolio-info">
-									<h4>Web 2</h4>
-									<p>Web</p>
-									<div class="portfolio-links">
-										<a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-										<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 portfolio-item filter-app">
-							<div class="portfolio-wrap">
-								<img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-								<div class="portfolio-info">
-									<h4>App 3</h4>
-									<p>App</p>
-									<div class="portfolio-links">
-										<a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-										<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 portfolio-item filter-card">
-							<div class="portfolio-wrap">
-								<img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-								<div class="portfolio-info">
-									<h4>Card 1</h4>
-									<p>Card</p>
-									<div class="portfolio-links">
-										<a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-										<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 portfolio-item filter-card">
-							<div class="portfolio-wrap">
-								<img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-								<div class="portfolio-info">
-									<h4>Card 3</h4>
-									<p>Card</p>
-									<div class="portfolio-links">
-										<a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-										<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 portfolio-item filter-web">
-							<div class="portfolio-wrap">
-								<img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-								<div class="portfolio-info">
-									<h4>Web 3</h4>
-									<p>Web</p>
-									<div class="portfolio-links">
-										<a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-										<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</section><!-- End Portfolio Section -->
-		<?php } ?>
 
 		<!-- ======= Contact Section ======= -->
 		<section id="contact" class="contact my-5">
@@ -430,7 +272,7 @@
 
 					<div class="col-lg-8 my-5 mt-lg-0">
 
-						<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+						<form action="controllers/contact.php" method="post" role="form" class="php-email-form">
 							<div class="row">
 								<div class="col-md-6 form-group">
 									<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -471,10 +313,6 @@
 			<div class="copyright">
 				&copy; Copyright <?= date('Y') ?> <strong><span>MyResume</span></strong>. All Rights Reserved
 			</div>
-			<?php if (false) { ?>
-				<div class="credits">
-				</div>
-			<?php } ?>
 		</div>
 	</footer><!-- End Footer -->
 
@@ -483,6 +321,7 @@
 	<script src="vendors/bootstrap/dependencies/popper.min.js"></script>
 	<script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script src="dist/js/main.js"></script>
 </body>
 
 </html>
