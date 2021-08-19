@@ -12,7 +12,7 @@
 	<meta content="" name="keywords">
 
 	<!-- Favicons -->
-	<link href="assets/img/favicon.png" rel="icon">
+	<link href="dist/images/icon.png" rel="icon">
 	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 	<link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
@@ -71,10 +71,9 @@
 			<h1>Atoyebi Ajibola</h1>
 			<p>I'm a <span>Developer</span></p>
 			<div class="social-links py-2">
-				<a href="#" class="twitter"><i class="fab icon fa-twitter"></i></a>
+				<a href="https://twitter.com/AtoyebiAjibola?s=09" target="_blank" class="twitter"><i class="fab icon fa-twitter"></i></a>
 				<a href="https://github.com/Ajibola03" target="_blank" class="github"><i class="fab icon fa-github"></i></a>
 				<a href="https://gitlab.com/Ajibola03" class="gitlab" target="_blank"><i class="fab icon fa-gitlab"></i></a>
-				<a href="#" class="linkedin"><i class="fab icon fa-linkedin"></i></a>
 			</div>
 		</div>
 	</section>
@@ -96,7 +95,7 @@
 						<img src="dist/images/pexels-drew-williams-3098620-min.jpg" class="img-fluid" alt="">
 					</div>
 					<div class="col-lg-8 pt-4 pt-lg-0 content">
-						<h3>Full-stack Web Developer &amp; Cross platfrom Mobile Developer (Android & iOS).</h3>
+						<h3>Full-stack Web Developer &amp; Cross platform Mobile Developer (Android & iOS).</h3>
 						<p class="fst-italic">
 							Professional web developer with 3 years experience.
 						</p>
@@ -107,7 +106,7 @@
 									<li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+2347083490591</span></li>
 									<li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>S.S.C.E</span></li>
 									<li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-									<li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Ibadan, Nigera</span></li>
+									<li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Ibadan, Nigeria</span></li>
 								</ul>
 							</div>
 						</div>
@@ -145,9 +144,9 @@
 						</div>
 
 						<div class="px-2 pb-2" style="background:#E9ECEF">
-							<span class="skill">Javascript <i class="val">75%</i></span>
+							<span class="skill">Javascript <i class="val">100%</i></span>
 							<div class="progress bg-dark">
-								<div class="progress-bar progress-bar-striped progress-bar-animated" style="border-radius: none !important; width: 75%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar progress-bar-striped progress-bar-animated" style="border-radius: none !important; width: 100%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
 					</div>
@@ -187,17 +186,17 @@
 
 				<div class="section-title">
 					<h2>Resume</h2>
-					<p>Information about my eductaion, previous jobs and internship programs.</p>
+					<p>Information about my education, previous jobs and internship programs.</p>
 				</div>
 
 				<div class="row">
 					<div class="col-lg-6">
-						<h3 class="resume-title">Sumary</h3>
+						<h3 class="resume-title">Summary</h3>
 						<div class="resume-item pb-0">
 							<h4>Atoyebi Ajibola</h4>
-							<p><em>I am a pro web developer with 3 years experience in the field and with my skills in the use of Git (GitLab and GitHub) and experience with PHP, Node.js and Express would like to take up any of your software developement tasks.</em></p>
+							<p><em>I am a pro web developer with 3 years experience in the field and with my skills in the use of Git (GitLab and GitHub) and experience with PHP, Node.js and Express would like to take up any of your software development tasks.</em></p>
 							<ul>
-								<li>Portland par 127,Orlando, FL</li>
+								<li>Address: 18, Joy Estate Gbelu Iyana Agbala, Oyo state, Ibadan.</li>
 								<li>07083490591</li>
 							</ul>
 						</div>
@@ -251,7 +250,7 @@
 							<div class="address">
 								<i class="bi bi-geo-alt"></i>
 								<h4>Location:</h4>
-								<p>A108 Adam Street, New York, NY 535022</p>
+								<p>Address: 18, Joy Estate Gbelu Iyana Agbala, Oyo state, Ibadan.</p>
 							</div>
 
 							<div class="email">
@@ -303,12 +302,11 @@
 	<footer id="footer" class="text-center p-5" style="background-color: #e9ecef;">
 		<div class="container">
 			<h3>Atoyebi Ajibola</h3>
-			<p>Full-stack Web and Mobile Devloper</p>
+			<p>Full-stack Web and Mobile Developer</p>
 			<div class="social-links">
-				<a href="#" class="twitter"><i class="fab icon fa-twitter"></i></a>
+				<a href="https://twitter.com/AtoyebiAjibola?s=09" target="_blank" class="twitter"><i class="fab icon fa-twitter"></i></a>
 				<a href="https://github.com/Ajibola03" target="_blank" class="github"><i class="fab icon fa-github"></i></a>
 				<a href="https://gitlab.com/Ajibola03" class="gitlab" target="_blank"><i class="fab icon fa-gitlab"></i></a>
-				<a href="#" class="linkedin"><i class="fab icon fa-linkedin"></i></a>
 			</div>
 			<div class="copyright">
 				&copy; Copyright <?= date('Y') ?> <strong><span>MyResume</span></strong>. All Rights Reserved
