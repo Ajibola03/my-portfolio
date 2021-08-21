@@ -3,7 +3,7 @@ define("DS", DIRECTORY_SEPARATOR);
 /** variable declarations and error-prone logic here */
 $prev_works = array_diff(scandir(__DIR__ . DS . "dist" . DS . "images" . DS . "portfolio"), ['..', '.']);
 $exp_yrs = date_diff(date_create('2019-03-12'), date_create(date('Y')))->y;
-$categories = ['personal', 'work'];
+$categories = ['personal', 'official'];
 ?>
 
 <!DOCTYPE HTML>
@@ -23,6 +23,7 @@ $categories = ['personal', 'work'];
     <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
     <style>
         .btn-primary,
+        .btn-primary:active,
         .btn-primary:hover {
             color: #fff;
             background-color: #ffad01;
@@ -121,8 +122,7 @@ $categories = ['personal', 'work'];
                     $category = explode('.', end($split))[0];
                 ?>
                     <div class="p-item web-design" data-groups="[&quot;<?= $category ?>&quot;]">
-                        <a href="images/portfolio-1-600x400.jpg">
-                            <img src="dist/images/portfolio/<?= $file ?>" alt="" data-pagespeed-url-hash="162059638"></a>
+                        <a><img src="dist/images/portfolio/<?= $file ?>" alt="" data-pagespeed-url-hash="162059638"></a>
                     </div>
                 <?php } ?>
             </div>
@@ -139,7 +139,7 @@ $categories = ['personal', 'work'];
                 </div>
                 <div class="col-sm-8">
                     <p class="margin-b-50">I am a developer with full stack web and cross-platform
-                        mobile development skill with professional level and mastery in languages and
+                        mobile development skill, with professional level and mastery in languages and
                         technologies such as php, javascript, flutter, laravel, node.js, express,
                         sql and mongodb</p>
                     <div class="row">
@@ -153,25 +153,25 @@ $categories = ['personal', 'work'];
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="radial-prog-area margin-b-30">
-                                <div class="radial-progress" data-prog-percent=".78">
+                                <div class="radial-progress" data-prog-percent=".95">
                                     <div></div>
-                                    <h6 class="progress-title">WEB DESIGN</h6>
+                                    <h6 class="progress-title">NODE & EXPRESS</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="radial-prog-area margin-b-30">
-                                <div class="radial-progress" data-prog-percent=".67">
+                                <div class="radial-progress" data-prog-percent=".93">
                                     <div></div>
-                                    <h6 class="progress-title">JAVA</h6>
+                                    <h6 class="progress-title">SQL & MONGODB</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="radial-prog-area margin-b-50">
-                                <div class="radial-progress" data-prog-percent=".97">
+                                <div class="radial-progress" data-prog-percent=".96">
                                     <div></div>
-                                    <h6 class="progress-title">PHP</h6>
+                                    <h6 class="progress-title">PHP & LARAVEL</h6>
                                 </div>
                             </div>
                         </div>
@@ -240,9 +240,9 @@ $categories = ['personal', 'work'];
                             <h5 class="font-yellow"><b style="text-transform: uppercase;">King's International College, Moniya, Ibadan, Nigeria</b></h5>
                             <h6 class="font-lite-black margin-t-10" style="text-transform: uppercase;">2013-2019</h6>
                             <p class="margin-tb-30">
-                                King’s International College (“KIC”) is a government-approved, co-educational institution. It is a private
+                                King’s International College (KIC) is a government-approved, co-educational institution. It is a private
                                 institution that accommodates both day and boarding students. KIC is situated on 35 acres of land,
-                                15 kilometres from Ibadan, Oyo State.
+                                15 kilometers from Ibadan, Oyo State.
                             </p>
                         </div>
                     </div>
