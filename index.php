@@ -1,4 +1,5 @@
 <?php
+session_start();
 define("DS", DIRECTORY_SEPARATOR);
 /** variable declarations and error-prone logic here */
 $prev_works = array_diff(scandir(__DIR__ . DS . "dist" . DS . "images" . DS . "portfolio"), ['..', '.']);
@@ -21,18 +22,30 @@ $categories = ['personal', 'official'];
 
     <link href="dist/css/A.common-css,,_bootstrap.css+common-css,,_ionico.css" rel="stylesheet" />
     <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="dist/css/animate.css">
     <style>
         .btn-primary,
         .btn-primary:active,
         .btn-primary:hover {
-            color: #fff;
-            background-color: #ffad01;
-            border-color: #ffad01;
+            color: #fff !important;
+            background-color: #ffad01 !important;
+            border-color: #ffad01 !important;
         }
     </style>
 </head>
 
 <body>
+    <?php if (isset($_SESSION['mail_sent']) && $_SESSION['mail_sent']) { ?>
+        <div class="alert flash alert-success m-2 animate__animated animate__backInDown" style="position: fixed; right: 0%; z-index: 10000" role="alert">
+            Mail sent successfully!
+        </div>
+        <script>
+            setTimeout(() => {
+                $('.flash').removeClass('animate__backInDown').addClass('animate__backOutUp')
+            }, 3000)
+        </script>
+    <?php $_SESSION['mail_sent'] = false;
+    } ?>
     <header>
         <div class="container">
             <div class="heading-wrapper">
