@@ -208,7 +208,7 @@ $categories = ['personal', 'official'];
                         <h5 class="font-yellow"><b>BACKEND DEVELOPER</b></h5>
                         <h6 class="margin-t-10">AUGUST 2021 - PRESENT</h6>
                         <p class="font-semi-white margin-tb-30">
-                            <a href="https://internship.zuri.team/"><img src="dist/images/zuri-logo.svg" alt="zuri logo"></a><br>
+                            <a href="https://internship.zuri.team/" target="_blank"><img src="dist/images/zuri-logo.svg" alt="zuri logo"></a><br>
                             <br>
                             The Zuri Internship program is a remote internship that enables you
                             learn and improve your skills by working on real-world projects. Here is a link
@@ -234,7 +234,7 @@ $categories = ['personal', 'official'];
                         <h5 class="font-yellow"><b>FULL STACK DEVELOPER</b></h5>
                         <h6 class="margin-t-10">JULY 2019 - DATE</h6>
                         <p class="font-semi-white margin-tb-30">
-                            <a href="https://www.alusofttechnologies.com/">
+                            <a href="https://www.alusofttechnologies.com/" target="_blank">
                             <img src="https://www.alusofttechnologies.com/img/logoo.png" style="width: 10%;" alt="logo">
                             <span style="color: #ba004d !important" class="font-weight-bold">AluSoft Technologies</span>
                         </a><br> <br>
