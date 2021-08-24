@@ -209,6 +209,7 @@ $categories = ['personal', 'official'];
                         <h6 class="margin-t-10">AUGUST 2021 - PRESENT</h6>
                         <p class="font-semi-white margin-tb-30">
                             <a href="https://internship.zuri.team/"><img src="dist/images/zuri-logo.svg" alt="zuri logo"></a><br>
+                            <br>
                             The Zuri Internship program is a remote internship that enables you
                             learn and improve your skills by working on real-world projects. Here is a link
                             to find out more about the program <a href="https://internship.zuri.team/">here</a>.
@@ -218,6 +219,35 @@ $categories = ['personal', 'official'];
                             <li>Remote. </li>
                             <li>Work individually and in groups over a series of 8 stages.</li>
                             <li>Several Tracks/Stacks Available.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <!-- <div class="heading"> -->
+                        <!-- <h3><b>Work Experience</b></h3>
+                        <h6 class="font-lite-black"><b>PREVIOUS JOBS</b></h6> -->
+                    <!-- </div> -->
+                </div>
+                <div class="col-sm-8">
+                    <div class="experience margin-b-50">
+                        <h4><b>AluSoft Technologies Limited</b></h4>
+                        <h5 class="font-yellow"><b>FULL STACK DEVELOPER</b></h5>
+                        <h6 class="margin-t-10">JULY 2019 - DATE</h6>
+                        <p class="font-semi-white margin-tb-30">
+                            <a href="https://www.alusofttechnologies.com/">
+                            <img src="https://www.alusofttechnologies.com/img/logoo.png" style="width: 10%;" alt="logo">
+                            <span style="color: #ba004d !important" class="font-weight-bold">AluSoft Technologies</span>
+                        </a><br> <br>
+                        AluSoft technologies (former AlutaMart (Nig) Limited) is an IT company that is 
+                        incorporated with Corporate Affairs Commission (CAC). We develop highly intuitive
+                         and enterprise software products and services 
+                        for private and public sectors. We are well known with the
+                         popular campus e-market community from which the company name is derived.
+                        </p>
+                        <ul class="list margin-b-30">
+                            <li>Software Development.</li>
+                            <li>ICT Training.</li>
+                            <li>ICT consultancy.</li>
                         </ul>
                     </div>
                 </div>
