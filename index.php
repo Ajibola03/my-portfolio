@@ -206,7 +206,7 @@ $categories = ['personal', 'official'];
                     <div class="experience margin-b-50">
                         <h4><b>Zuri Internship Program (HNGi8 x !14G)</b></h4>
                         <h5 class="font-yellow"><b>BACKEND DEVELOPER</b></h5>
-                        <h6 class="margin-t-10">AUGUST 2021 - PRESENT</h6>
+                        <h6 class="margin-t-10">AUGUST 2021 - OCTOBER 2021</h6>
                         <p class="font-semi-white margin-tb-30">
                             <a href="https://internship.zuri.team/" target="_blank"><img src="dist/images/zuri-logo.svg" alt="zuri logo"></a><br>
                             <br>
@@ -224,33 +224,35 @@ $categories = ['personal', 'official'];
                 </div>
                 <div class="col-sm-4">
                     <!-- <div class="heading"> -->
-                        <!-- <h3><b>Work Experience</b></h3>
+                    <!-- <h3><b>Work Experience</b></h3>
                         <h6 class="font-lite-black"><b>PREVIOUS JOBS</b></h6> -->
                     <!-- </div> -->
                 </div>
-                <div class="col-sm-8">
-                    <div class="experience margin-b-50">
-                        <h4><b>AluSoft Technologies Limited</b></h4>
-                        <h5 class="font-yellow"><b>FULL STACK DEVELOPER</b></h5>
-                        <h6 class="margin-t-10">JULY 2019 - DATE</h6>
-                        <p class="font-semi-white margin-tb-30">
-                            <a href="https://www.alusofttechnologies.com/" target="_blank">
-                            <img src="https://www.alusofttechnologies.com/img/logoo.png" style="width: 10%;" alt="logo">
-                            <span style="color: #ba004d !important" class="font-weight-bold">AluSoft Technologies</span>
-                        </a><br> <br>
-                        AluSoft technologies (former AlutaMart (Nig) Limited) is an IT company that is 
-                        incorporated with Corporate Affairs Commission (CAC). We develop highly intuitive
-                         and enterprise software products and services 
-                        for private and public sectors. We are well known with the
-                         popular campus e-market community from which the company name is derived.
-                        </p>
-                        <ul class="list margin-b-30">
-                            <li>Software Development.</li>
-                            <li>ICT Training.</li>
-                            <li>ICT consultancy.</li>
-                        </ul>
+                <?php if (false) { ?>
+                    <div class="col-sm-8 d-none">
+                        <div class="experience margin-b-50">
+                            <h4><b>AluSoft Technologies Limited</b></h4>
+                            <h5 class="font-yellow"><b>FULL STACK DEVELOPER</b></h5>
+                            <h6 class="margin-t-10">JULY 2019 - DATE</h6>
+                            <p class="font-semi-white margin-tb-30">
+                                <a href="https://www.alusofttechnologies.com/" target="_blank">
+                                    <img src="https://www.alusofttechnologies.com/img/logoo.png" style="width: 10%;" alt="logo">
+                                    <span style="color: #ba004d !important" class="font-weight-bold">AluSoft Technologies</span>
+                                </a><br> <br>
+                                AluSoft technologies (former AlutaMart (Nig) Limited) is an IT company that is
+                                incorporated with Corporate Affairs Commission (CAC). We develop highly intuitive
+                                and enterprise software products and services
+                                for private and public sectors. We are well known with the
+                                popular campus e-market community from which the company name is derived.
+                            </p>
+                            <ul class="list margin-b-30">
+                                <li>Software Development.</li>
+                                <li>ICT Training.</li>
+                                <li>ICT consultancy.</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                <?php } ?>
             </div>
         </div>
     </section>
