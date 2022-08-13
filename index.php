@@ -88,19 +88,19 @@ $categories = ['personal', 'official'];
                 <div class="col-md-10 col-lg-8">
                     <div class="intro">
                         <div class="profile-img">
-                            <img src="dist/images/profile.jpg" alt="">
+                            <img src="dist/images/profile.jpg" alt="" />
                         </div>
                         <h2><b>Atoyebi Ajibola</b></h2>
                         <h4 class="font-yellow">Full Stack Developer</h4>
                         <ul class="information margin-tb-30">
-                            <li><b>BORN : </b>May 21, 2003</li>
+                            <li><b>BORN : </b>May 21</li>
                             <li><b>EMAIL : </b>ajibola03official@gmail.com</li>
-                            <li><b>MARITAL STATUS : </b>Single</li>
                         </ul>
                         <ul class="social-icons">
                             <li><a href="https://twitter.com/AtoyebiAjibola?s=09" target="_blank"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="https://github.com/Ajibola03" target="_blank"><i class="fab fa-github"></i></a></li>
                             <li><a href="https://gitlab.com/Ajibola03" target="_blank"><i class="fab fa-gitlab"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/ajibola-atoyebi-23b59b217/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -208,8 +208,8 @@ $categories = ['personal', 'official'];
                         <h5 class="font-yellow"><b>BACKEND DEVELOPER</b></h5>
                         <h6 class="margin-t-10">AUGUST 2021 - OCTOBER 2021</h6>
                         <p class="font-semi-white margin-tb-30">
-                            <a href="https://internship.zuri.team/" target="_blank"><img src="dist/images/zuri-logo.svg" alt="zuri logo"></a><br>
-                            <br>
+                            <a href="https://internship.zuri.team/" target="_blank"><img src="dist/images/zuri-logo.svg" alt="zuri logo" /></a><br />
+                            <br />
                             The Zuri Internship program is a remote internship that enables you
                             learn and improve your skills by working on real-world projects. Here is a link
                             to find out more about the program <a href="https://internship.zuri.team/">here</a>.
@@ -223,22 +223,18 @@ $categories = ['personal', 'official'];
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <!-- <div class="heading"> -->
-                    <!-- <h3><b>Work Experience</b></h3>
-                        <h6 class="font-lite-black"><b>PREVIOUS JOBS</b></h6> -->
-                    <!-- </div> -->
+                    
                 </div>
-                <?php if (false) { ?>
-                    <div class="col-sm-8 d-none">
+                    <div class="col-sm-8">
                         <div class="experience margin-b-50">
                             <h4><b>AluSoft Technologies Limited</b></h4>
                             <h5 class="font-yellow"><b>FULL STACK DEVELOPER</b></h5>
                             <h6 class="margin-t-10">JULY 2019 - DATE</h6>
                             <p class="font-semi-white margin-tb-30">
                                 <a href="https://www.alusofttechnologies.com/" target="_blank">
-                                    <img src="https://www.alusofttechnologies.com/img/logoo.png" style="width: 10%;" alt="logo">
+                                    <img src="https://www.alusofttechnologies.com/img/logoo.png" style="width: 10%;" alt="logo" />
                                     <span style="color: #ba004d !important" class="font-weight-bold">AluSoft Technologies</span>
-                                </a><br> <br>
+                                </a><br /> <br />
                                 AluSoft technologies (former AlutaMart (Nig) Limited) is an IT company that is
                                 incorporated with Corporate Affairs Commission (CAC). We develop highly intuitive
                                 and enterprise software products and services
@@ -252,7 +248,6 @@ $categories = ['personal', 'official'];
                             </ul>
                         </div>
                     </div>
-                <?php } ?>
             </div>
         </div>
     </section>
