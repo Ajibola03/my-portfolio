@@ -1,1 +1,1 @@
-My porfolio repo with script to print my name in php.
+My portfolio repo with script to print my name in php.

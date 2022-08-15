@@ -1,4 +1,10 @@
 vendor/
 .vscode/
 _index.php
+input.css
 test.php
+node_modules/
+package.json
+package-lock.json
+tailwind.config.js
+yarn.lock
