@@ -714,6 +714,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -739,6 +743,15 @@ video {
   overflow: hidden;
 }
 
+.break-normal {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.break-words {
+  overflow-wrap: break-word;
+}
+
 .bg-background {
   --tw-bg-opacity: 1;
   background-color: rgb(10 25 47 / var(--tw-bg-opacity));
@@ -761,6 +774,18 @@ video {
   background-image: url('/dist/images/project_default.png');
 }
 
+.bg-\[url\(\'\/dist\/images\/projects\/eduporch\.png\'\)\] {
+  background-image: url('/dist/images/projects/eduporch.png');
+}
+
+.bg-\[url\(\'\/dist\/images\/projects\/fx\.png\'\)\] {
+  background-image: url('/dist/images/projects/fx.png');
+}
+
+.bg-\[url\(\'\/dist\/images\/projects\/sybg\.png\'\)\] {
+  background-image: url('/dist/images/projects/sybg.png');
+}
+
 .bg-contain {
   background-size: contain;
 }
@@ -769,8 +794,16 @@ video {
   background-size: cover;
 }
 
+.bg-fixed {
+  background-attachment: fixed;
+}
+
 .bg-center {
   background-position: center;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-no-repeat {
@@ -855,6 +888,10 @@ video {
   color: rgb(154 167 201 / var(--tw-text-opacity)) !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media screen and (min-width: 425px) {
   .nav-items a:nth-child(even) {
     margin: 0 20px;
@@ -893,7 +930,7 @@ a {
 }
 
 .btn-outline-secondary:hover {
-  background: rgba(208, 208, 208, 0.2)
+  background: rgba(208, 208, 208, 0.2);
 }
 
 .profile-img::after {
@@ -917,6 +954,10 @@ a {
   content: url("/dist/images/arrow_right_alt.png");
   position: absolute;
   left: -15%;
+}
+
+.hover\:bg-contain:hover {
+  background-size: contain;
 }
 
 @media (min-width: 768px) {
@@ -989,6 +1030,10 @@ a {
     justify-content: flex-start;
   }
 
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+
   .md\:bg-cover {
     background-size: cover;
   }
@@ -1003,6 +1048,18 @@ a {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .lg\:inline-block {
+    display: inline-block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
