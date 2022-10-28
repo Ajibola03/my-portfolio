@@ -1,0 +1,111 @@
+[
+    {
+        "name": "EduPorch Website",
+        "slug": "eduporch",
+        "shortDescription": "The website aims to explain the uses of <a href='https://eduporch.com/' target='_blank'>EduPorch</a> a product developed by <a href='https://www.alusofttechnologies.com/'>AluSoft Technologies LTD</a> and help the targeted customers register and manage their accounts without coming in contact with the developers of the product, complete automation of the rigorous approach used before to get users started.",
+        "description": "<p>The website aims to explain the uses of <a href='https://eduporch.com/' target='_blank'>EduPorch</a> a product developed by <a href='https://www.alusofttechnologies.com/' target='_blank'>AluSoft Technologies LTD</a> and help the targeted customers register and manage their accounts without coming in contact with the developers of the product, it is a web application that provides complete automation of the previous rigorous approach used to get users started.</p>\n<div class='forDevs'>&nbsp;</div>\n<div class='forDevs'>I worked with a team of developers, using HTML, CSS, Bootstrap, Javascript, and JQuery as the frontend stack and PHP, and MySQL as the backend language and Database respectively. The <a href='https://www.w3schools.com/php/php_oop_what_is.asp' target='_blank'>OOP</a> paradigm was used to maintain clean and easy-to-scale code.</div>\n<div class='forDevs'>&nbsp;</div>\n<div class='forDevs'>I handled the majority of the backend functionality personally as it was my first real-world experience as a full-stack developer, features I am most proud of include: authentication, basic and advanced <a href='https://www.codecademy.com/article/what-is-crud' target='_blank'>CRUD</a> operations, content restrictions based on the authenticated user's roles, payment gateway integration with <a href='https://paystack.com/' target='_blank'>Paystack</a> and more.</div>",
+        "coverImage": "/dist/images/projects/eduporch.png",
+        "images": [
+            "/dist/images/projects/eduporch.png",
+            "/dist/images/projects/eduporch-1.png",
+            "/dist/images/projects/eduporch-2.png",
+            "/dist/images/projects/eduporch-3.png",
+            "/dist/images/projects/eduporch-4.png"
+        ],
+        "url": "https://eduporch.com",
+        "github": "",
+        "tech": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "Javascript",
+            "JQuery",
+            "PHP",
+            "MySQL",
+            "Paystack"
+        ],
+        "favorite": true
+    },
+    {
+        "name": "FirstX",
+        "slug": "firstx",
+        "shortDescription": "FirstX is a SaaS platform from <a href='https://www.10xv.xyz/' target='_blank'>10X Ventures</a> that helps businesses gain their first 'X' customers with intelligent suggestions, corrections, and messaging algorithms to avoid messages being flagged as spam or accounts as bots and so much more, all while simplifying the rigorous manual organic outreach system. It uses Twitter via the Twitter API as the primary outreach channel.",
+        "description": "<a href='https://www.firstx.ai/' target='_blank'>FirstX</a> is a SaaS platform from <a href='https://www.10xv.xyz/' target='_blank'>10X Ventures</a> that helps businesses gain their first 'X' customers with intelligent suggestions, corrections, and messaging algorithms to avoid messages being flagged as spam or accounts as bots and so much more, all while simplifying the rigorous manual organic outreach system. It uses Twitter via the Twitter API as the primary outreach channel.<div class='forDevs'><br />I worked remotely with a team of full-stack developers based in the United States while building this product. We mainly used a framework called <a href='https://blitzjs.com/' target='_blank'>Blitz.js</a> in developing our products at <a href='https://www.10xv.xyz/' target='_blank' rel='noopener'>10X Ventures</a>, a full-stack React and Node.js framework built on <a href='https://nextjs.org/' target='_blank'>Next.js</a> and <a href='https://expressjs.com/' target='_blank'>Express.js</a>. TailwindCSS and SCSS were used for styling, and PostgreSQL was used as the database technology.<br /><br />I was especially proud of my contributions concerning the use of the <a href='https://developer.twitter.com/en/docs' target='_blank'>Twitter API</a> and Queues to move heavy processing to the background and improve the user experience of the application among others.</div>",
+        "coverImage": "/dist/images/projects/fx.png",
+        "images": [
+            "/dist/images/projects/fx.png",
+            "/dist/images/projects/fx-1.png",
+            "/dist/images/projects/fx-2.png",
+            "/dist/images/projects/fx-3.png"
+        ],
+        "url": "https://www.firstx.ai/",
+        "github": "",
+        "tech": [
+            "React",
+            "TailwindCSS",
+            "Javascript",
+            "Typescript",
+            "PostgreSQL",
+            "Node.js",
+            "Blitz.js",
+            "Prisma",
+            "Stripe"
+        ],
+        "favorite": true
+    },
+    {
+        "name": "SYBG",
+        "slug": "sybg",
+        "shortDescription": "SYBG (Since You&apos;ve Been Gone) is another SaaS platform from <a href='https://www.10xv.xyz/' target='_blank'>10X Ventures</a> that offers website owners a means to provide personalized product announcements delivered on-site, in-product, or via email. No coding required.",
+        "description": "<p><a href='https://sybg.ai/home' target='_blank'>SYBG</a> (Since You've Been Gone) is another SaaS platform from&nbsp;<a href='https://www.10xv.xyz/' target='_blank' rel='noopener'>10X Ventures</a> that offers website owners a means to provide personalized product announcements delivered on-site, in-product, or via email. No coding required.</p><br />\n<p>I worked remotely with a team of full-stack developers based in the United States while building this product. We mainly used a framework called&nbsp;<a href='https://blitzjs.com/' target='_blank' rel='noopener'>Blitz.js</a>&nbsp;in developing our products at&nbsp;<a href='https://www.10xv.xyz/' target='_blank' rel='noopener'>10X Ventures</a>, a full-stack React and Node.js framework built on&nbsp;<a href='https://nextjs.org/' target='_blank' rel='noopener'>Next.js</a>&nbsp;and&nbsp;<a href='https://expressjs.com/' target='_blank' rel='noopener'>Express.js</a>. TailwindCSS and SCSS were used for styling, and PostgreSQL was used as the database technology.</p><br />\n<p><a href='https://sybg.ai/home' target='_blank' rel='noopener'>SYBG</a> was my second SaaS application built with React and Node.js and I could already see growth in my understanding of the stack as I took on more complex tasks, Using <a href='https://stripe.com/' target='_blank'>Stripe</a> as our payment gateway and maintaining user subscriptions was the most challenging for me, but with the help of my team members, I was able to pull through.</p>",
+        "coverImage": "/dist/images/projects/sybg.png",
+        "images": [
+            "/dist/images/projects/sybg.png",
+            "/dist/images/projects/sybg-1.png",
+            "/dist/images/projects/sybg-2.png",
+            "/dist/images/projects/sybg-3.png",
+            "/dist/images/projects/sybg-4.png"
+        ],
+        "url": "https://www.sybg.ai/",
+        "github": "",
+        "tech": [
+            "React",
+            "TailwindCSS",
+            "Javascript",
+            "Typescript",
+            "PostgreSQL",
+            "Node.js",
+            "Blitz.js",
+            "Prisma",
+            "Stripe"
+        ],
+        "favorite": true
+    },
+    {
+        "name": "ChangeLog",
+        "slug": "changelog",
+        "shortDescription": "<p>The idea behind <a href='https://www.gochangelog.com/' target='_blank' rel='noopener'>ChangeLog</a> is to create a space where startups can talk about their products, growth, setbacks, and all that comes with building a product or running a business and connect with potential clients, users, investors, and the like.</p>",
+        "description": "<p><a href='https://www.gochangelog.com/' target='_blank'>ChangeLog</a> was my first project with <a href='https://www.10xv.xyz/' target='_blank' rel='noopener'>10X Ventures</a>, it is also my first project built entirely remotely. The idea behind <a href='https://www.gochangelog.com/' target='_blank' rel='noopener'>ChangeLog</a> is to develop a building-in-public community, a space where startups can talk about their products, growth, setbacks, and all that comes with building a product or running a business and connect with potential clients, users, investors, and the like.</p>\n<br />\n<p>I worked remotely with a team of full-stack developers based in the United States while building this product. We mainly used a framework called <a href='https://blitzjs.com/' target='_blank' rel='noopener'>Blitz.js</a>&nbsp;in developing our products at&nbsp;<a href='https://www.10xv.xyz/' target='_blank' rel='noopener'>10X Ventures</a>, a full-stack React and Node.js framework built on&nbsp;<a href='https://nextjs.org/' target='_blank' rel='noopener'>Next.js</a>&nbsp;and&nbsp;<a href='https://expressjs.com/' target='_blank' rel='noopener'>Express.js</a>. TailwindCSS and SCSS were used for styling, and PostgreSQL was used as the database technology.</p>\n<br />\n<p><a href='https://www.gochangelog.com/' target='_blank' rel='noopener'>ChangeLog</a> was my first SaaS application built with React and Node.js and I learned a lot from it.</p>",
+        "coverImage": "/dist/images/projects/cl.png",
+        "images": [
+            "/dist/images/projects/cl.png",
+            "/dist/images/projects/cl-1.png",
+            "/dist/images/projects/cl-2.png",
+            "/dist/images/projects/cl-3.png",
+            "/dist/images/projects/cl-4.png"
+        ],
+        "url": "https://www.gochangelog.com/",
+        "github": "",
+        "tech": [
+            "React",
+            "TailwindCSS",
+            "Javascript",
+            "Typescript",
+            "PostgreSQL",
+            "Node.js",
+            "Blitz.js",
+            "Prisma",
+            "Stripe"
+        ]
+    }
+]

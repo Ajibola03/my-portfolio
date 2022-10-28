@@ -8,3 +8,9 @@ package.json
 package-lock.json
 tailwind.config.js
 yarn.lock
+# gcloud
+.config/
+.gcloudignore
+.gcloud/
+app.yaml
+server.php

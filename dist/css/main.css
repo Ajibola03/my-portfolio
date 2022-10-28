@@ -583,6 +583,10 @@ video {
   margin: 10vw;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -618,6 +622,16 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mx-\[10vw\] {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mt-\[10px\] {
   margin-top: 10px;
 }
@@ -646,8 +660,20 @@ video {
   margin-left: 0.5rem;
 }
 
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -668,6 +694,10 @@ video {
 
 .h-\[150px\] {
   height: 150px;
+}
+
+.h-\[300px\] {
+  height: 300px;
 }
 
 .max-h-screen {
@@ -702,12 +732,20 @@ video {
   cursor: pointer;
 }
 
+.list-none {
+  list-style-type: none;
+}
+
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -718,8 +756,12 @@ video {
   flex-wrap: wrap;
 }
 
-.justify-end {
-  justify-content: flex-end;
+.items-center {
+  align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
 }
 
 .justify-center {
@@ -728,6 +770,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-5 {
@@ -743,15 +789,6 @@ video {
   overflow: hidden;
 }
 
-.break-normal {
-  overflow-wrap: normal;
-  word-break: normal;
-}
-
-.break-words {
-  overflow-wrap: break-word;
-}
-
 .bg-background {
   --tw-bg-opacity: 1;
   background-color: rgb(10 25 47 / var(--tw-bg-opacity));
@@ -762,16 +799,17 @@ video {
   background-color: rgb(17 34 64 / var(--tw-bg-opacity));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/dist\/images\/background\.png\'\)\] {
   background-image: url('/dist/images/background.png');
 }
 
 .bg-\[url\(\'\/dist\/images\/profile\.png\'\)\] {
   background-image: url('/dist/images/profile.png');
-}
-
-.bg-\[url\(\'\/dist\/images\/project_default\.png\'\)\] {
-  background-image: url('/dist/images/project_default.png');
 }
 
 .bg-\[url\(\'\/dist\/images\/projects\/eduporch\.png\'\)\] {
@@ -794,16 +832,8 @@ video {
   background-size: cover;
 }
 
-.bg-fixed {
-  background-attachment: fixed;
-}
-
 .bg-center {
   background-position: center;
-}
-
-.bg-top {
-  background-position: top;
 }
 
 .bg-no-repeat {
@@ -826,6 +856,16 @@ video {
 .px-\[5vw\] {
   padding-left: 5vw;
   padding-right: 5vw;
+}
+
+.py-\[5vw\] {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.px-\[10vw\] {
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .text-left {
@@ -861,6 +901,10 @@ video {
   line-height: 1.25rem;
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
 .font-\[800\] {
   font-weight: 800;
 }
@@ -886,6 +930,12 @@ video {
 .\!text-primary {
   --tw-text-opacity: 1 !important;
   color: rgb(154 167 201 / var(--tw-text-opacity)) !important;
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 html {
@@ -956,10 +1006,6 @@ a {
   left: -15%;
 }
 
-.hover\:bg-contain:hover {
-  background-size: contain;
-}
-
 @media (min-width: 768px) {
   .md\:order-1 {
     order: 1;
@@ -989,6 +1035,10 @@ a {
     grid-column: span 2 / span 2;
   }
 
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
   .md\:m-0 {
     margin: 0px;
   }
@@ -1000,10 +1050,6 @@ a {
 
   .md\:inline-block {
     display: inline-block;
-  }
-
-  .md\:hidden {
-    display: none;
   }
 
   .md\:h-\[300px\] {
@@ -1022,8 +1068,20 @@ a {
     width: 300px;
   }
 
+  .md\:w-\[unset\] {
+    width: unset;
+  }
+
   .md\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:justify-start {
@@ -1036,6 +1094,10 @@ a {
 
   .md\:bg-cover {
     background-size: cover;
+  }
+
+  .md\:p-5 {
+    padding: 1.25rem;
   }
 
   .md\:text-left {

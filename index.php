@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajibola Atoyebi</title>
     <?php $page = "home";
-    include_once('partials/links.php') ?>
+    include_once(__DIR__.'/partials/links.php') ?>
 </head>
 
 <body class="bg-background bg-[url('/dist/images/background.png')] bg-no-repeat">
-    <?php include_once('partials/navbar.php') ?>
+    <?php include_once(__DIR__.'/partials/navbar.php') ?>
     <section class="m-[10vw] text-center md:text-left">
         <h1 class="font-raleway font-[700] text-[20px] md:text-[40px] lg:text-[50px] animate__animated animate__fadeInUp">
             Hello, I&apos;m <span class="text-secondary">Ajibola Atoyebi.</span> <br>
@@ -21,7 +21,7 @@
             I specialize in creating amazing digital experiences by combining excellent
             front-end development skills with a solid back-end structure.
         </p>
-        <div class="btn-outline-secondary my-10 mx-auto md:mx-0">View my resume</div>
+        <a href="https://drive.google.com/file/d/1b10v4Q_N4DdMuJ355MqBJtQhXa6Db_8x/view?usp=sharing" target="_blank" class="btn-outline-secondary my-10 mx-auto md:mx-0">View my resume</a>
         <div class="flex justify-center md:justify-start align-middle">
             <a href="https://github.com/Ajibola03" target="_blank" class="mr-5"><img src="/dist/images/github.svg" alt="github"></a>
             <a href="https://twitter.com/AtoyebiAjibola" target="_blank" class="mx-5"><img src="/dist/images/twitter.svg" alt="twitter"></a>
@@ -189,7 +189,7 @@
             <a href="mailto:ajibola03official@gmail.com" class="ml-5"><img class="cursor-pointer" src="/dist/images/email.svg" alt="email"></a>
         </div>
     </section>
-    <?php include_once('partials/footer.php')  ?>
+    <?php include_once(__DIR__.'/partials/footer.php')  ?>
 </body>
 
 </html>
